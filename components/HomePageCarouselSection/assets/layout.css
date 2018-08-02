@@ -1,0 +1,26 @@
+.scs-edit-mode .sl-list-drop-zone {
+	display: none;
+}
+
+.scs-edit-mode .sl-list-drop-zone.sl-empty,
+.scs-drag.scs-edit-mode .sl-list-drop-zone {
+	display: block;
+	min-height: 25px;
+	line-height: 25px;
+	text-align: center;
+
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+.sl-list-drop-zone {
+	background-color: #f1f2f2;
+	color: black;
+}
+.scs-drag.scs-edit-mode .sl-list-drop-zone {
+	background-color: #f1f2f2;
+}
+.scs-edit-mode .scs-drop-target-highlight > .scs-container-styles > .scs-component-content > .sl-list-drop-zone {
+	outline: dashed 2px #14836f;
+	outline-offset: -2px
+}

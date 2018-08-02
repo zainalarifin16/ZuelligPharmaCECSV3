@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Homepage - Semantic</title>
+  <link rel="stylesheet" type="text/css" href="../dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/transition.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/library/glide.core.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/library/glide.theme.min.css">
+
+  <style type="text/css">
+
+    .item{
+      font-size: 13px;
+      font-weight: 600!important;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: 1.1px;
+      text-align: center;
+      color: #003948!important;
+    }
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 1em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    .middle-zp-menu{
+      opacity: 0.5;
+      font-family: GothamRounded;
+      font-size: 12px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #ffffff;
+      width: 8% !important;
+    }
+
+    .middle-zp-menu.active{
+      opacity: 1;
+      font-family: GothamRounded;
+      font-size: 12px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    .zp-profile-picture{
+
+    }
+
+    .zp-profile-point{
+      font-family: GothamRounded;
+      font-size: 36px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: 1px;
+      color: #c3d500;
+    }
+
+    .zp-lable-profile-expiring{
+      font-family: GothamRounded;
+      font-size: 11px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .zp-date-expiring{
+      font-family: GothamRounded;
+      font-size: 13px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: 0.3px;
+      text-align: center;
+      color: #ffffff;
+
+    }
+
+    .zp-point-activity{
+      font-family: GothamRounded;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #c3d500;
+    }
+
+    .zp-lable-activity{
+      font-family: GothamRounded;
+      font-size: 9px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.22;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .zp-lable-lifeplus-challenge{
+      font-family: GothamRounded;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      text-align: center;
+      color: #c3d500;
+    }
+
+    .zp-footer-lable{
+      font-family: GothamRounded;
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.9px;
+      text-align: right;
+      color: #ffffff;
+    }
+    
+    .arrow-down {
+      width: 0; 
+      height: 0; 
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #005d62;
+      margin: 0px auto;
+    }
+
+    .zp-ads-subtitle{
+      font-family: GothamRounded;
+      font-size: 24px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      letter-spacing: -0.9px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .zp-ads-title{
+      font-family: GothamRounded;
+      font-size: 21px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: #005d62;
+    }
+
+    .zp-ads-content{
+      font-family: GothamRounded;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+    }
+
+    .zp-post-time{
+      font-family: GothamRounded;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      color: #818282;
+    }
+
+    .zp-post-facebook-comment{
+      font-family: GothamRounded;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      color: #005d62;
+    }
+
+    .glide__bullet{
+      width: 25px;
+      height: 5px;
+      border-radius: 200px;
+      background-color: #003948;
+    }
+    
+    .glide__bullet:hover, .glide__bullet:focus{
+      border: 2px solid rgb(114, 151, 72);;
+      background-color: rgb(114, 151, 72);
+    }
+
+    .glide__bullet--active {
+      background-color: rgb(114, 151, 72);
+    }
+
+    .image-top-menu {
+      width: 100px;
+    }
+
+    .text-top-section{
+      text-align: left;
+      padding: 25px 0px!important;
+    }
+
+    .text-top-section h3 {
+      margin-bottom: 0px;
+      font-family: GothamRounded;
+      font-size: 11px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.7px;
+      color: #003948;
+    }
+
+    .text-top-section p{
+      font-family: GothamRounded;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.3px;
+      color: #000000;
+      max-width: 210px;
+    }
+
+    .text-glide{
+      text-align: left;
+      padding-top: 50px!important;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script src="../dist/library/jquery.min.js"></script>
+  <script src="../dist/library/glide.min.js"></script>
+  <script src="../dist/components/visibility.js"></script>
+  <script src="../dist/components/sidebar.js"></script>
+  <script src="../dist/components/transition.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+      new Glide('.glide').mount()
+
+    })
+  ;
+  </script>
+</head>
+<body>
+
+<!-- Following Menu -->
+<!-- <div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="active item">Home</a>
+    <a class="item">Work</a>
+    <a class="item">Company</a>
+    <a class="item">Careers</a>
+    <div class="right menu">
+      <div class="item">
+        <a class="ui button">Log in</a>
+      </div>
+      <div class="item">
+        <a class="ui primary button">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Sidebar Menu -->
+<!-- <div class="ui vertical inverted sidebar menu">
+  <a class="active item">Home</a>
+  <a class="item">Work</a>
+  <a class="item">Company</a>
+  <a class="item">Careers</a>
+  <a class="item">Login</a>
+  <a class="item">Signup</a>
+</div> -->
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui vertical masthead center aligned segment" style="padding-top: 0px;" >
+    <div class="ui image container" style="width: 100%" >
+      <img src="../images/i-stock-905996586@3x.png">
+      <div style="position: absolute; top: 0; left: 0;right: 0;" >
+        <img src="../images/life-plus-white@3x.png" style="margin: 80px auto 15px;width:18%" >
+        <span style="font-size: 12px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: normal;letter-spacing: 1.6px;color: #ffffff;" > Your Partner To Healthy Living </span>
+      </div>
+    </div>
+    <div class="ui container">
+      <div class="ui large secondary pointing menu" style="border-bottom: 0px;" >
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <img src="../images/life-plus-color@3x.png" style="width: 10%;height: 10%;margin-top: 10px;" />
+        <a class="item">WOW!</a>
+        <a class="item">LIFE</a>
+        <a class="item">HEALTH</a>
+        <a class="item">EUREKA</a>
+        <a class="item">VIDEOS</a>
+        <a class="item">DISCOVERY</a>
+        <a class="item">ASSESSMENT</a>
+        <div class="right item">
+          <!-- <a class="ui button">Log in</a>
+          <a class="ui button">Sign Up</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="ui container" >
+      <div class="ui three column grid" >
+          <div class="column" >
+            <div class="ui two column grid" >
+              <div class="six wide column">
+                  <img src="../images/i-stock-519837716.jpg" class="image-top-menu" />
+              </div>
+              <div class="ten wide column text-top-section" >
+                  <h3>WOW!</h3>
+                  <p>Scientists Have Created Synthetic Embryos Without Eggs Or Sperm</p>
+              </div>
+            </div>
+          </div>
+          <div class="column" >
+            <div class="ui two column grid" >
+                <div class="six wide column">
+                    <img src="../images/bitmap_eureka.jpg" class="image-top-menu" />
+                </div>
+                <div class="ten wide column text-top-section" >
+                    <h3>WOW!</h3>
+                    <p>Scientists Have Created Synthetic Embryos Without Eggs Or Sperm</p>
+                </div>
+            </div>
+          </div>
+          <div class="column" >
+            <div class="ui two column grid" >
+              <div class="six wide column">
+                  <img src="../images/health_bitmap.jpg" class="image-top-menu" />
+              </div>
+              <div class="ten wide column text-top-section" >
+                  <h3>WOW!</h3>
+                  <p>Scientists Have Created Synthetic Embryos Without Eggs Or Sperm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="ui container">
+      <div class="glide" style="height: 400px;" >
+        
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="ui two column grid" >
+                <div class="four wide column text-glide" >
+                  <span style="font-family: GothamRounded;
+                  text-align: left;
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.71;
+                  letter-spacing: -0.6px;
+                  color: #005d62;" >LIFE</span>
+                  <br>
+                  <span style="font-family: GothamRounded;
+                  text-align: left;
+                  font-size: 40px;
+                  font-weight: 300;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.2;
+                  letter-spacing: normal;
+                  color: #000000;" > The Importance Of Building Up Your Core </span>
+                  <br>
+                  <span style="font-family: GothamRounded;
+                  font-size: 14px;
+                  font-weight: 300;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.57;
+                  letter-spacing: 0.3px;
+                  color: #000000;" >Building core strength helps you with your balance, prevents back pain and also helps you to perform better in sports and other activities.
+                    </span>
+                </div>
+                <div class="twelve wide column" >
+                  <img src="../images/glide_picture.jpg" style="max-width: 600px;" >
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="ui two column grid" >
+                <div class="four wide column" >
+                  <span style="font-family: GothamRounded;
+                  text-align: left;
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.71;
+                  letter-spacing: -0.6px;
+                  color: #005d62;" >LIFE</span>
+                  <br>
+                  <span style="font-family: GothamRounded;
+                  text-align: left;
+                  font-size: 40px;
+                  font-weight: 300;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.2;
+                  letter-spacing: normal;
+                  color: #000000;" > The Importance Of Building Up Your Core </span>
+                  <br>
+                  <span style="font-family: GothamRounded;
+                  font-size: 14px;
+                  font-weight: 300;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.57;
+                  letter-spacing: 0.3px;
+                  color: #000000;" >Building core strength helps you with your balance, prevents back pain and also helps you to perform better in sports and other activities.
+                    </span>
+                </div>
+                <div class="twelve wide column" >
+                  <img src="../images/glide_picture.jpg" style="max-width: 600px;" >
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="ui two column grid" >
+                <div class="four wide column" >
+                  <span style="font-family: GothamRounded;
+                  text-align: left;
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.71;
+                  letter-spacing: -0.6px;
+                  color: #005d62;" >LIFE</span>
+                  <br>
+                  <span style="font-family: GothamRounded;
+                  text-align: left;
+                  font-size: 40px;
+                  font-weight: 300;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.2;
+                  letter-spacing: normal;
+                  color: #000000;" > The Importance Of Building Up Your Core </span>
+                  <br>
+                  <span style="font-family: GothamRounded;
+                  font-size: 14px;
+                  font-weight: 300;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1.57;
+                  letter-spacing: 0.3px;
+                  color: #000000;" >Building core strength helps you with your balance, prevents back pain and also helps you to perform better in sports and other activities.
+                    </span>
+                </div>
+                <div class="twelve wide column" >
+                  <img src="../images/glide_picture.jpg" style="max-width: 600px;" >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ui column grid" style="background-color: #005d62;height: 60px;" >
+    <div class="ui container column grid" style="padding-top: 10px;" >
+      <div class="column middle-zp-menu active" >FOR YOU</div>
+      <div class="column middle-zp-menu" >FEATURED</div>
+      <div class="column middle-zp-menu" >TRENDING</div>
+      <div class="column middle-zp-menu" >LATEST</div>
+    </div>
+  </div>
+
+  <div class="ui container grid" >
+    <div class="ui twelve wide column" >
+      <div class="row" >
+        <div class="ui two column grid" >
+          <div class="nine wide column" >
+            <img src="../images/best_food_content.jpg" style="max-width: 420px;" >
+          </div>
+          <div class="seven wide column" >
+            <span style="font-family: GothamRounded;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.71;
+            letter-spacing: -0.6px;
+            color: #005d62;" > HEALTH </span>
+            <br>
+            <span style="font-family: GothamRounded;
+            font-size: 28px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.14;
+            letter-spacing: normal;
+            color: #000000;" >Experts Reveal The Best Foods For Your Skin & Honestly, They Sound Delicious</span>
+            <div class="ui three column grid" style="width: 100%; position: absolute;bottom: 15px;" >
+              <div class="column" >
+                <span class="zp-post-time" >Posted a day ago</span>
+              </div>
+              <div class="column">
+                  <img src="../images/comments.svg" style="width: 15px;" >
+                <span class="zp-post-facebook-comment">18 comments</span>
+              </div>
+              <div class="column">
+                  <img src="../images/facebook.png" style="width: 15px;" >
+                <span class="zp-post-facebook-comment">21 shares</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr style="background-color: #ebebeb; margin: 30px 0px; opacity: 0.5;" >
+
+      <div class="row" >
+        <div class="ui two column grid" >
+          <div class="nine wide column" >
+            <img src="../images/best_food_content.jpg" style="max-width: 420px;" >
+          </div>
+          <div class="seven wide column" >
+            <span style="font-family: GothamRounded;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.71;
+            letter-spacing: -0.6px;
+            color: #005d62;" > HEALTH </span>
+            <br>
+            <span style="font-family: GothamRounded;
+            font-size: 28px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.14;
+            letter-spacing: normal;
+            color: #000000;" >Experts Reveal The Best Foods For Your Skin & Honestly, They Sound Delicious</span>
+            <div class="ui three column grid" style="width: 100%; position: absolute;bottom: 15px;" >
+              <div class="column" >
+                <span class="zp-post-time" >Posted a day ago</span>
+              </div>
+              <div class="column">
+                <img src="../images/comments.svg" style="width: 15px;" >
+                <span class="zp-post-facebook-comment">18 comments</span>
+              </div>
+              <div class="column">
+                  <img src="../images/facebook.png" style="width: 15px;" >
+                <span class="zp-post-facebook-comment">21 shares</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui four wide column" >
+      <div class="row" >
+        <div class="column" style="background-color: #005d62;" >
+          <div class="row">
+            <div class="column">
+              <img src="" >
+            </div>
+            <div class="column" style="text-align: center;" >
+              <span class="zp-profile-point" >1215</span>
+            </div>
+            <div class="column" style="text-align: center;" >
+              <span class="zp-lable-profile-expiring" >Life Plus Points expiring on</span>
+            </div>
+            <div class="column" style="text-align: center;" >
+              <span class="zp-date-expiring" >24 MAY 2018.</span>
+            </div>
+            <div class="ui three column grid" style="text-align: center;" >
+              <div class="column">
+                <span class="zp-point-activity" >354</span><br>
+                <span class="zp-lable-activity" >ACTIVITY</span>
+              </div>
+              <div class="column">
+                <span class="zp-point-activity" >281</span><br>
+                <span class="zp-lable-activity" >POST</span>
+              </div>
+              <div class="column">
+                <span class="zp-point-activity" >432</span><br>
+                <span class="zp-lable-activity" >SHARE</span>
+              </div>
+            </div>
+            <div class="column" style="text-align: center;padding: 15px;" >
+                <button class="ui button" style="color:#ffffff; background-color: #729748;" >REDEEM LIFE PLUS POINTS</button>
+            </div>
+            <hr style="opacity: 0.2;" >
+            <div class="column" style="text-align: center;padding: 20px;" >
+                <span class="zp-lable-lifeplus-challenge" >YOUR LIFE PLUS HEALTH CHALLENGES</span>
+            </div>
+          </div>
+        </div>
+        <div class="column" style="background-color: #f9f9f9;" >
+          <div class="arrow-down" ></div>
+          <div class="zp-ads-subtitle" >30-Day Quit Smoking Challenge</div>
+          <img  >
+          <div class="zp-ads-title" >Feel refresh!</div>
+          <div class="zp-ads-content" >You’re free from anxiety and your body is changing into a non-smoker. More</div>
+          <hr style="background-color: #ebebeb;" >
+          <div class="zp-ads-subtitle" >Daily 10k Steps Challenge</div>
+          <img >
+          <div class="zp-ads-title" >Just 3k away!</div>
+          <div class="zp-ads-content" >You are just 3000 steps away to hit the national average. More</div>
+        </div>
+        <div class="column" style="background-color: #005d62; text-align: center;padding: 15px;" >
+          <button class="ui button" style="background-color: #729748;" >JOIN A CHALLENGE TODAY</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui inverted vertical footer segment" style="background-color: #005d62;margin-top: 20px;" >
+    <div class="ui container">
+      <div class="ui stackable inverted equal height stackable grid">
+        <div class="six wide column">
+          <img src="../images/zuellig.svg" style="width: 90px;" >
+        </div>
+        <div class="ten wide column">
+          <p class="zp-footer-lable" >© 2018 Zuellig Pharma Holdings Pte. Ltd. All rights reserved. | Legal Disclaimer | Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<div class="row" >
+  <div class="ui two column stackable grid" style="min-height: 230px;" >
+    <div class="eight wide column" >
+      <img src="{{post_detail.image}}" class="zp-img-content" >
+    </div>
+    <div class="eight wide column" >
+      <span class="zp-category-content" > {{post_detail.category}} </span>
+      <br>
+      <a href="{{scsData.detailPageLink}}" >
+        <span class="zp-title-content" >{{post_detail.title}}</span>
+      </a>
+      <div class="ui three column grid column-social-bar" >
+        <div class="column social-bar container_zpposttime" >
+          <span class="zp-post-time" >Posted a day ago</span>
+        </div>
+        <div class="separator_menu" ></div>
+        <div class="column social-bar container_commentfb">
+          <div class="comments-image" ></div>
+          <!-- <img src="_scs_theme_root_/assets/dist/images/comments.svg"  > -->
+          <span class="zp-post-facebook-comment">18 comments</span>
+        </div>
+        <div class="separator_menu" ></div>
+        <div class="column social-bar">
+          <div class="facebook-image" ></div>
+          <!-- <img src="_scs_theme_root_/assets/dist/images/facebook.png" style="width: 15px;" > -->
+          <span class="zp-post-facebook-comment">21 shares</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="row" >
+    <div class="ui two column grid" >
+      <div class="nine wide column" >
+        <img src="{{post_detail.iamge}}" style="max-width: 420px;" >
+      </div>
+      <div class="seven wide column" >
+        <span style="font-family: GothamRounded;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.71;
+        letter-spacing: -0.6px;
+        color: #005d62;" > {{post_detail.category}} </span>
+        <br>
+        <span style="font-family: GothamRounded;
+        font-size: 28px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: #000000;" >{{ post_detail.date }}</span>
+        <div class="ui three column grid" style="width: 100%; position: absolute;bottom: 15px;" >
+          <div class="column" >
+            <span class="zp-post-time" >{{ post_detail.date }}</span>
+          </div>
+          <div class="column">
+            <img src="_scs_theme_root_/assets/dist/images/comments.svg" style="width: 15px;" >
+            <span class="zp-post-facebook-comment">18 comments</span>
+          </div>
+          <div class="column">
+              <img src="_scs_theme_root_/assets/dist/images/facebook.png" style="width: 15px;" >
+            <span class="zp-post-facebook-comment">21 shares</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->

@@ -7,30 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Homepage - Semantic</title>
-  <link rel="stylesheet" type="text/css" href="../dist/components/reset.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
+  <title>LifePlus</title>
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/site.css">
 
-  <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/menu.css">
 
-  <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/sidebar.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/tab.css">
+
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/library/glide.core.min.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/library/glide.theme.min.css">
+
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/library/fa/css/fontawesome-all.min.css">
 
   <style type="text/css">
+    
+    @font-face {
+      font-family: GothamRoundedLight;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Light.otf");
+    }
+
+    @font-face {
+      font-family: GothamRoundedBold;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Bold.otf");
+    }
+    
+    @font-face {
+      font-family: GothamRoundedMedium;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Medium.otf");
+    }
+    
+    @font-face {
+      font-family: GothamRoundedBook;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Book.otf");
+    }
+
+    html, body{
+      font-family: GothamRoundedMedium;
+    }
 
     .item{
+      font-family: GothamRoundedMedium;
       font-size: 13px;
-      font-weight: 600!important;
+      font-weight: 100!important;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.54;
@@ -93,11 +124,680 @@
     }
 
     .footer.segment {
-      padding: 5em 0em;
+      padding: 1em 0em;
     }
 
     .secondary.pointing.menu .toc.item {
       display: none;
+    }
+
+    #logo_center img{
+      margin: 80px auto 15px;
+      width:18%
+    }
+
+    #logo_center .scs-text{
+      font-size: 15px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .middle-zp-menu{
+      opacity: 0.5;
+      font-family: GothamRoundedMedium;
+      font-size: 12px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #ffffff;
+      width: 8% !important;
+    }
+
+    .middle-zp-menu:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    .middle-zp-menu.active{
+      opacity: 1;
+      font-family: GothamRoundedMedium;
+      font-size: 12px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    .zp-profile-point{
+      font-family: GothamRoundedMedium;
+      font-size: 30px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: 1px;
+      color: #c3d500;
+    }
+
+    .zp-lable-profile-expiring{
+      font-family: GothamRoundedLight;
+      font-size: 11px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+
+    .zp-date-expiring{
+      font-family: GothamRoundedMedium;
+      font-size: 13px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: 0.3px;
+      text-align: center;
+      color: #ffffff;
+
+    }
+
+    .zp-point-activity{
+      font-family: GothamRoundedMedium;
+      font-size: 18px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #c3d500;
+    }
+
+    .zp-lable-activity{
+      font-family: GothamRoundedMedium;
+      font-size: 9px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.22;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .zp-lable-lifeplus-challenge{
+      font-family: GothamRoundedMedium;
+      font-size: 16px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      text-align: center;
+      color: #c3d500;
+    }
+
+    .zp-footer-lable{
+      font-family: GothamRoundedLight;
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.9px;
+      text-align: right;
+      color: #ffffff;
+    }
+    
+    .arrow-down {
+      width: 0; 
+      height: 0; 
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #005d62;
+      margin: 0px auto;
+      margin-top: -11px;
+      margin-bottom: 15px;
+    }
+
+    .zp-ads-subtitle{
+      font-family: GothamRoundedLight;
+      font-size: 24px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      letter-spacing: -0.9px;
+      text-align: center;
+      color: #000000;
+      margin: 10px 0px;
+    }
+
+    .zp-ads-title{
+      font-family: GothamRoundedMedium;
+      font-size: 21px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: #005d62;
+    }
+
+    .zp-ads-content{
+      font-family: GothamRoundedBook;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+    }
+
+    .zp-ads-image{
+      max-width: 220px;
+    }
+
+    .separator_menu{
+      border-right: 1px solid #ebebeb!important;
+      padding: 0px!important;
+      margin: 15px 10px;
+    }
+
+    #container_glide{
+      min-height: 450px;
+    }
+
+    .glide__bullets{
+      margin: -40px auto;
+    }
+
+    .glide__bullet{
+      width: 25px;
+      height: 5px;
+      border-radius: 200px;
+      background-color: #003948;
+    }
+    
+    .glide__bullet:hover, .glide__bullet:focus{
+      border: 2px solid rgb(114, 151, 72);;
+      background-color: rgb(114, 151, 72);
+    }
+
+    .glide__bullet--active {
+      background-color: rgb(114, 151, 72);
+    }
+
+    .image-top-menu {
+      max-width: 120px;
+      padding: 10px 0px;
+    }
+
+    .text-top-section{
+      text-align: left;
+      padding: 25px 0px!important;
+    }
+
+    .text-top-section h3 {
+      margin-bottom: 0px;
+      font-family: GothamRoundedMedium;
+      font-size: 11px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.7px;
+      color: #003948;
+      text-transform: uppercase;
+    }
+
+    .text-top-section p{
+      font-family: GothamRoundedLight;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.3px;
+      color: #000000;
+      max-width: 210px;
+    }
+
+    .text-glide{
+      text-align: left;
+      padding-top: 50px!important;
+    }
+
+    #post-top{
+      padding: 10px 0px 0px 0px;
+    }
+
+    #post-top .scs-row{
+      padding: 0px;
+    }
+
+    .zp-icon-social{
+      width: 15px;
+    }
+
+    .glide-picture{
+      max-width: 600px;
+    }
+
+    .zp-profile-picture{
+      border-radius: 120px;
+      width: 100px;
+      margin: 20px;
+    }
+
+    .zp-pop-quiz-banner{
+      background-color: #005d62;
+      background-image: url(_scs_theme_root_/assets/dist/images/lamp_background_banner.png);
+      background-position: right center;
+      background-size: 60px 165px;
+      background-repeat: no-repeat;
+      padding: 30px 20px 40px;
+      min-height: 250px;
+
+    }
+    
+    .zp-subtitle-pop-quiz-banner{
+      font-family: GothamRoundedMedium;
+      font-size: 16px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      color: #c3d500;
+      padding: 10px 0px;
+    }
+
+    .zp-title-pop-quiz-banner{
+      font-family: GothamRoundedLight;
+      font-size: 28px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.8px;
+      color: #ffffff;
+      padding: 10px 0px;
+    }
+
+    .zp-content-pop-quiz-banner{
+      font-family: GothamRoundedLight;
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+      padding: 10px 0px;
+    }
+
+    .zp-content-pop-quiz-banner a {
+      font-family: GothamRoundedBook;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #c3d500;
+      padding: 10px 0px;
+    }
+
+    .zp-border-pop-quiz-banner{
+      opacity: 0.2;
+      background-color: #ebebeb;
+    }
+
+    .zp-people-pop-quiz-banner{
+      width: 30px;
+      border-radius: 130px;
+      float: left;
+    }
+
+    .zp-friends-pop-quiz-banner{
+      font-family: GothamRoundedMedium;
+      font-size: 10px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.8;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+      float: left;
+      padding-top: 5px;
+    }
+
+    .activity-user{
+      text-align: center;
+    }
+
+    .zp-button-redeem{
+      font-family: GothamRoundedMedium!important;
+      color: #ffffff!important;
+      background-color: #729748!important;
+      font-size: 13px!important;
+    }
+
+    .logo-company{
+      width: 10%;
+      height: 10%;
+      margin-top: 15px;
+    }
+
+    .container-glide{
+      height: 400px;
+    }
+
+    .zp-glide-category{
+      font-family: GothamRoundedMedium;
+      text-align: left;
+      font-size: 12px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: -0.6px;
+      color: #005d62;
+    }
+
+    .zp-glide-title{
+      font-family: GothamRoundedLight;
+      text-align: left;
+      font-size: 33px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    .zp-glide-summary{
+      font-family: GothamRoundedLight;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: 0.3px;
+      color: #000000;
+    }
+
+    .logo-company-bottom{
+      width: 90px;
+    }
+
+    .zp-ads-single-image{
+      max-width: 220px;
+    }
+    
+    #header-image .scs-image{
+      margin: 0px!important;
+    }
+
+    .item-right-profile{
+      padding: 0px 5px;
+    }
+
+    .notification-buble{
+      background-color: #d0021b;
+      border: solid 2px #ffffff;
+      border-radius: 30px;
+      width: 15px;
+      position: absolute;
+      color: #ffffff;
+      font-size: 7px;
+      padding: 2px;
+      top: 10px;
+      right: 49px;
+      padding-right: 1px;
+      
+    }
+
+    #post-content .scs-container-styles .scs-component-container{
+      border-bottom: 1px solid #ebebeb;
+      margin-bottom: 20px;
+    }
+    
+    #post-content .scs-container-styles .scs-component-container .scs-component-bounding-box{
+      padding: 20px 0px;
+    }
+
+    .read-more{
+      font-family: GothamRoundedBook;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #005d62;
+    }
+
+    @media only screen and (max-width: 375px){
+
+      #header-image{
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin: 35px auto 0px;
+      }
+
+      .zp-menu{
+        position: absolute;
+        top: 0px;
+      }
+
+      .zp-menu .toc{
+        position: absolute!important;
+        right: 0px;
+        top: 5px;
+      }
+
+      .zp-menu .sidebar{
+        width: 20px!important;
+      }
+
+      .zp-menu > .logo-company{
+        width: 18%;
+      }
+
+      #logo_center img {
+        margin: 35px auto 0px;
+      }
+      
+      #logo_center .scs-title{
+        margin-top: 0px;
+      }
+
+      #logo_center .scs-text{
+        font-size: 8px;
+      }
+
+      .container-glide{
+        height: 480px;
+      }
+
+      .glide__bullets{
+        margin: 10px auto;
+      }
+
+      .glide-picture{
+        max-width: 320px;
+      }
+
+      .zp-glide-title{
+        font-size: 20px;
+      }
+
+      .zp-glide-summary{
+        font-size: 10px;
+      }
+
+      .image-glide{
+        padding-left: 0px;
+        padding-right: 5px;
+      }
+
+      .social-glide{
+        position: absolute!important;
+        top: 400px;
+        width: 100%;
+      }
+      
+      .middle-zp-menu{
+        min-width: 24% !important;
+        padding: 1rem 10px!important;
+        font-size: 10px!important;
+      }
+
+      #ads-content{
+        padding: 0px 0px!important;
+        border-radius: 3px;
+      }
+
+      .zp-ads-content{
+        padding: 10px;
+      }
+
+      #column_logo_company_bottom{
+        text-align: center;
+      }
+
+      .logo-company-bottom{
+        width: 150px;
+      }
+
+      .zp-button-redeem{
+        font-size: 1rem;
+      }
+
+      .zp-ads-single-image{
+        max-width: 300px!important;
+      }
+
+      .ui.menu:not(.vertical) .right.item{
+        margin-right: 40px!important;
+        padding-top: 5px!important;
+      }
+
+      .notification-buble{
+        top: 5px;
+      }
+
+      .ui.secondary.pointing.menu .item {
+        font-size: 11px;
+      }
+
+    }
+
+    @media only screen and (max-width: 800px) and (min-width: 768px) {
+
+      .middle-zp-menu{
+        width: 13% !important;
+      }
+      
+      .zp-icon-social{
+        width: 10px;
+      }
+
+      #container_glide{
+        min-height: 400px;
+      }
+
+      .glide__bullets{
+        margin: 40px auto;
+      }
+
+      .glide-picture{
+        max-width: 400px;
+      }
+
+      .activity-user{
+        margin: 0px!important;
+      }
+
+      .zp-button-redeem{
+        font-size: 10px!important;
+      }
+
+      .zp-lable-lifeplus-challenge{
+        font-size: 11px;
+      }
+
+      .zp-ads-subtitle{
+        font-size: 18px;
+      }
+
+      .zp-ads-image{
+        max-width: 140px;
+      }
+
+      .zp-subtitle-pop-quiz-banner{
+        font-size: 12px;
+      }
+
+      .zp-title-pop-quiz-banner{
+        font-size: 22px;
+      }
+
+      .zp-content-pop-quiz-banner{
+        font-size: 11px;
+      }
+      
+      .zp-content-pop-quiz-banner a{
+        font-size: 11px;
+      }
+
+      .zp-friends-pop-quiz-banner{
+        padding-top: 8px;
+        font-size: 7px;
+      }
+
+      .zp-ads-single-image{
+        max-width: 140px;
+      }
+
+      .ui.secondary.pointing.menu .item{
+        padding: 15px 10px!important;
+        font-size: 10px;
+      }
+
+    }
+
+    @media only screen and (max-width: 980px) and (min-width: 768px) {
+      .ui.secondary.pointing.menu .item{
+        padding: 15px 10px!important;
+      }
+      
+      .ui.menu:not(.vertical) .right.item{
+        padding: 8px!important;
+      }
+
+      .image-top-menu{
+        width: 80px;
+      }
+
+      .text-top-section{
+        padding: 10px 5px!important;
+      }
+
     }
 
     @media only screen and (max-width: 700px) {
@@ -127,13 +827,27 @@
 
   </style>
 
-  <script src="../library/jquery.min.js"></script>
-  <script src="../dist/components/visibility.js"></script>
-  <script src="../dist/components/sidebar.js"></script>
-  <script src="../dist/components/transition.js"></script>
+  <!--$SCS_RENDER_INFO-->
+  <!--$SCS_SITE_HEADER-->
+  <!--$SCS_PAGE_HEADER-->
+
+  <script src="_scs_theme_root_/assets/dist/library/jquery.min.js"></script>
+  <script src="_scs_theme_root_/assets/dist/library/glide.min.js"></script>
+  <script src="_scs_theme_root_/assets/dist/components/visibility.js"></script>
+  <script src="_scs_theme_root_/assets/dist/components/sidebar.js"></script>
+  <script src="_scs_theme_root_/assets/dist/components/transition.js"></script>
+  <script src="_scs_theme_root_/assets/dist/components/tab.js"></script>
+
+  <script type="text/javascript" src="_scs_theme_root_/assets/js/includeHTML.js"></script>
+  <script data-main="/_sitescloud/renderer/renderer.js" src="/_sitescloud/renderer/require.js"></script>
+
   <script>
   $(document)
     .ready(function() {
+
+      $('.category-content .header-category-content')
+        .tab()
+      ;
 
       // fix menu when passed
       $('.masthead')
@@ -153,6 +867,8 @@
         .sidebar('attach events', '.toc.item')
       ;
 
+      new Glide('.glide').mount()
+
     })
   ;
   </script>
@@ -160,166 +876,481 @@
 <body>
 
 <!-- Following Menu -->
-<!-- <div class="ui large top fixed hidden menu">
+<div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="active item">Home</a>
-    <a class="item">Work</a>
-    <a class="item">Company</a>
-    <a class="item">Careers</a>
-    <div class="right menu">
+    <!-- <a class="active item">Home</a> -->
+    <a class="item">WOW!</a>
+    <a class="item">LIFE</a>
+    <a class="item">HEALTH</a>
+    <a class="item">EUREKA</a>
+    <a class="item">VIDEOS</a>
+    <a class="item">DISCOVERY</a>
+    <a class="item" href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/assessment-page.html" >ASSESSMENT</a>
+    <!-- <div class="right menu">
       <div class="item">
         <a class="ui button">Log in</a>
       </div>
       <div class="item">
         <a class="ui primary button">Sign Up</a>
       </div>
-    </div>
+    </div> -->
   </div>
-</div> -->
+</div>
 
 <!-- Sidebar Menu -->
-<!-- <div class="ui vertical inverted sidebar menu">
-  <a class="active item">Home</a>
-  <a class="item">Work</a>
-  <a class="item">Company</a>
-  <a class="item">Careers</a>
-  <a class="item">Login</a>
-  <a class="item">Signup</a>
-</div> -->
+<div class="ui vertical sidebar menu right">
+  <!-- <a class="active item">Home</a> -->
+  <a class="item">WOW!</a>
+  <a class="item">LIFE</a>
+  <a class="item">HEALTH</a>
+  <a class="item">EUREKA</a>
+  <a class="item">VIDEOS</a>
+  <a class="item">DISCOVERY</a>
+  <a class="item" href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/assessment-page.html" >ASSESSMENT</a>
+  <!-- <a class="item">Login</a>
+  <a class="item">Signup</a> -->
+</div>
 
 
 <!-- Page Contents -->
 <div class="pusher">
   <div class="ui vertical masthead center aligned segment" style="padding-top: 0px;" >
-    <div class="ui image container" style="width: 100%" >
-      <img src="../images/i-stock-905996586@3x.png">
-      <div style="position: absolute; top: 0; left: 0;right: 0;" >
-        <img src="../images/life-plus-white@3x.png" style="margin: 80px auto 15px;width:18%" >
-        <span style="font-size: 12px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: normal;letter-spacing: 1.6px;color: #ffffff;" > Your Partner To Healthy Living </span>
-      </div>
+    <div class="ui image container scs-slot" style="width: 100%" id="header-image" >
+    </div>
+    <div class="scs-slot" id="logo_center" style="position: absolute; top: 0; left: 0;right: 0;" >
     </div>
     <div class="ui container">
-      <div class="ui large secondary pointing menu" style="border-bottom: 0px;" >
+      <div class="ui large secondary pointing menu zp-menu" style="border-bottom: 0px;" >
         <a class="toc item">
-          <i class="sidebar icon"></i>
+          <img class="sidebar icon" src="_scs_theme_root_/assets/dist/images/icon-menu.png" />
         </a>
-        <img src="../images/life-plus-color@3x.png" style="width: 10%;height: 10%;margin-top: 10px;" />
+        <img src="_scs_theme_root_/assets/dist/images/life-plus-color@3x.png" class="logo-company" />
         <a class="item">WOW!</a>
         <a class="item">LIFE</a>
         <a class="item">HEALTH</a>
         <a class="item">EUREKA</a>
         <a class="item">VIDEOS</a>
         <a class="item">DISCOVERY</a>
-        <a class="item">ASSESSMENT</a>
+        <a class="item" href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/assessment-page.html" >ASSESSMENT</a>
         <div class="right item">
-          <!-- <a class="ui button">Log in</a>
-          <a class="ui button">Sign Up</a> -->
+          <div class="item-right-profile" >ENG<i class="fas fa-chevron-down"></i></div>
+          <div class="item-right-profile" ><i class="fas fa-search"></i></div>
+          <div class="item-right-profile" >
+            <i class="far fa-bell"></i>
+            <span class="notification-buble" >1</span>
+          </div>
+          <div class="item-right-profile" ><img src="_scs_theme_root_/assets/dist/images/profile_picture.jpg" class="zp-profile-picture" style="width:25px;margin: 0px;" ></div>
         </div>
       </div>
     </div>
 
-    <div class="ui container">
-      <div class="ui three column doubling grid">
-        <div class="column">
-          <div class="ui segment">Content</div>
-        </div>
-        <div class="column">
-          <div class="ui segment">Content</div>
-        </div>
-        <div class="column">
-          <div class="ui segment">Content</div>
+    <div style="width: 100%;background: #ebebeb;margin: 20px 0px;" >
+      <div class="ui container" >
+        <div class="ui three column stackable grid scs-slot" id="highlight-post" >
+          <!-- 
+          <div class="column">
+            <div class="ui two column grid">
+                <div class="six wide column">
+                    <img src="_scs_theme_root_/assets/dist/images/i-stock-519837716.jpg" class="image-top-menu">
+                </div>
+                <div class="ten wide column text-top-section">
+                    <h3>WOW</h3>
+                    <p>Scientists Have Created Synthetic Embryos Without Eggs Or Sperm</p>
+                </div>
+            </div>
+          </div> -->
+
+          <!-- 
+          <div class="column">
+            <div class="ui two column grid">
+                  <div class="six wide column">
+                      <img src="_scs_theme_root_/assets/dist/images/bitmap_eureka.jpg" class="image-top-menu">
+                  </div>
+                  <div class="ten wide column text-top-section">
+                      <h3>EUREKA</h3>
+                      <p>This Is What Your Brain Looks Like When You’re Processing A Thought</p>
+                  </div>
+            </div>
+          </div> -->
+
+          <!-- 
+          <div class="column">
+            <div class="ui two column grid">
+                  <div class="six wide column">
+                      <img src="_scs_theme_root_/assets/dist/images/health_bitmap.jpg" class="image-top-menu">
+                  </div>
+                  <div class="ten wide column text-top-section">
+                      <h3>HEALTH</h3>
+                      <p>10 Odd Things Your Body Says About You</p>
+                  </div>
+            </div>
+          </div> -->
+  
         </div>
       </div>
     </div>
 
-    <div class="ui text container">
-      <h1 class="ui header">
-        Imagine-a-Company
-      </h1>
-      <h2>Do whatever you want when you want to.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+    <div class="ui container" id="container_glide" >
+      <div class="glide container-glide" >
+        
+        <div class="glide__track scs-slot" data-glide-el="track" id="post-slider" >
+          <ul class="glide__slides scs-slot " id="post-slider" style="min-height: 400px;" >
+
+            <li class="glide__slide">
+              <div class="ui two column stackable grid" >
+                <div class="five wide computer seven wide tablet column" style="text-align: left;" >
+                  <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+                    <span class="zp-glide-category" >LIFE</span>
+                  </a>
+                  <br>
+                  <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+                    <span class="zp-glide-title" > The Importance Of Building Up Your Core </span>
+                  </a>
+                  <br>
+                  <span class="zp-glide-summary" >Building core strength helps you with your balance, prevents back pain and also helps you to perform better in sports and other activities.
+                  </span>
+                  <br>
+                  <div class="ui three column padded grid social-glide">
+                    <div class="four wide column container_zpposttime" >
+                      <span class="zp-post-time" style="font-size: 8px;" >Posted a day ago</span>
+                    </div>
+                    <div class="separator_menu" ></div>
+                    <div class="column container_commentfb" >
+                      <img src="_scs_theme_root_/assets/dist/images/comments.svg" style="width: 10px;" >
+                      <span class="zp-post-facebook-comment" style="font-size: 8px;" >18 comments</span>
+                    </div>
+                    <div class="separator_menu" ></div>
+                    <div class="column" style="padding-left: 0px;padding-right: 5px;" >
+                        <img src="_scs_theme_root_/assets/dist/images/facebook.png" style="width: 10px;" >
+                      <span class="zp-post-facebook-comment" style="font-size: 8px;" >21 shares</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="eleven wide computer nine wide tablet column image-glide" >
+                  <img src="_scs_theme_root_/assets/dist/images/glide_picture.jpg" class="glide-picture" >
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="ui two column stackable grid" >
+                <div class="five wide computer seven wide column" style="text-align: left;" >
+                  <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+                    <span class="zp-glide-category" >WOW!</span>
+                  </a>
+                  <br>
+                  <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+                    <span class="zp-glide-title" >7 Weird Traits That Make Men Attractive</span>
+                  </a>
+                  <br>
+                  <span class="zp-glide-summary" >If you’re a guy and you wonder, "Am I attractive?" keep reading. Most men lament that they just don’t understand what women are looking for in a man.
+                  </span>
+                  <br>
+                  <div class="ui three column padded grid social-glide">
+                    <div class="four wide column container_zpposttime" >
+                      <span class="zp-post-time" style="font-size: 8px;" >Posted a day ago</span>
+                    </div>
+                    <div class="separator_menu" ></div>
+                    <div class="column container_commentfb" >
+                      <img src="_scs_theme_root_/assets/dist/images/comments.svg" style="width: 10px;" >
+                      <span class="zp-post-facebook-comment" style="font-size: 8px;" >18 comments</span>
+                    </div>
+                    <div class="separator_menu" ></div>
+                    <div class="column" style="padding-left: 0px;padding-right: 5px;" >
+                        <img src="_scs_theme_root_/assets/dist/images/facebook.png" style="width: 10px;" >
+                      <span class="zp-post-facebook-comment" style="font-size: 8px;" >21 shares</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="eleven wide computer nine wide tablet column image-glide" >
+                  <img src="_scs_theme_root_/assets/dist/images/glide_picture2.jpg" class="glide-picture" >
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div id="glide__bullets_center" class="glide__bullets" data-glide-el="controls[nav]">
+          
+          <!-- <button class="glide__bullet" data-glide-dir="=0"></button> -->
+          <!-- <button class="glide__bullet" data-glide-dir="=1"></button> -->
+          <!-- <button class="glide__bullet" data-glide-dir="=2"></button> -->
+        </div>
+
+      </div>
     </div>
 
   </div>
 
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-        <div class="eight wide column">
-          <h3 class="ui header">We Help Companies and Companions</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="center aligned column">
-          <a class="ui huge button">Check Them Out</a>
-        </div>
-      </div>
+  <div class="ui column grid" style="background-color: #005d62;height: 60px;" >
+    <div class="ui container column grid category-content" style="padding-top: 10px;" >
+      <div class="column header-category-content middle-zp-menu active" data-tab="foryou" >FOR YOU</div>
+      <div class="column header-category-content middle-zp-menu" data-tab="featured" >FEATURED</div>
+      <div class="column header-category-content middle-zp-menu" data-tab="trending" >TRENDING</div>
+      <div class="column header-category-content middle-zp-menu" data-tab="latest" >LATEST</div>
     </div>
   </div>
 
+  <div class="ui container stackable grid" >
+    <div class="ui twelve wide column" id="post-content" >
+      
+      <div class="ui bottom attached tab segment active scs-slot" style="border:0px;" data-tab="foryou" id="for-you" ></div>
+      <div class="ui bottom attached tab segment scs-slot" style="border:0px;" data-tab="featured" id="featured" ></div>
+      <div class="ui bottom attached tab segment scs-slot" style="border:0px;" data-tab="trending" id="trending" ></div>
+      <div class="ui bottom attached tab segment scs-slot" style="border:0px;" data-tab="latest" id="latest" ></div>
 
-  <div class="ui vertical stripe quote segment">
-    <div class="ui equal width stackable internally celled grid">
-      <div class="center aligned row">
-        <div class="column">
-          <h3>"What a Company"</h3>
-          <p>That is what they all say about us</p>
-        </div>
-        <div class="column">
-          <h3>"I shouldn't have gone with their competitor."</h3>
-          <p>
-            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-      <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-      <a class="ui large button">Read More</a>
-      <h4 class="ui horizontal header divider">
-        <a href="#">Case Studies</a>
-      </h4>
-      <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-      <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-      <a class="ui large button">I'm Still Quite Interested</a>
-    </div>
-  </div>
-
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Religious Ceremonies</a>
-            <a href="#" class="item">Gazebo Plans</a>
+      <!-- 
+      <div class="row" >
+        <div class="ui two column stackable grid" >
+          <div class="nine wide column" >
+            <img src="_scs_theme_root_/assets/dist/images/best_food_content.jpg" class="zp-img-content" >
+          </div>
+          <div class="seven wide column" >
+            <span class="zp-category-content" > HEALTH </span>
+            <br>
+            <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+              <span class="zp-title-content" >Experts Reveal The Best Foods For Your Skin & Honestly, They Sound Delicious</span>
+            </a>
+            <div class="ui three column grid column-social-bar" >
+              <div class="column social-bar container_zpposttime" >
+                <span class="zp-post-time" >Posted a day ago</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar container_commentfb">
+                  <img src="_scs_theme_root_/assets/dist/images/comments.svg" style="width: 15px;" >
+                <span class="zp-post-facebook-comment">18 comments</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar">
+                  <img src="_scs_theme_root_/assets/dist/images/facebook.png" style="width: 15px;" >
+                <span class="zp-post-facebook-comment">21 shares</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Banana Pre-Order</a>
-            <a href="#" class="item">DNA FAQ</a>
-            <a href="#" class="item">How To Access</a>
-            <a href="#" class="item">Favorite X-Men</a>
+      </div> -->
+
+      <!-- <hr style="background-color: #ebebeb; margin: 30px 0px; opacity: 0.5;" > -->
+
+      <!--
+      <div class="row" >
+        <div class="ui two column stackable grid" >
+          <div class="nine wide column" >
+            <img src="_scs_theme_root_/assets/dist/images/eye_content.jpg" class="zp-img-content" >
+          </div>
+          <div class="seven wide column" >
+            <span class="zp-category-content" > EUREKA </span>
+            <br>
+            <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+              <span class="zp-title-content" >This Is What Happens To Your Eyes If You Stare Directly Into A Solar Eclipse</span>
+            </a>
+            <div class="ui three column grid column-social-bar" >
+              <div class="column social-bar container_zpposttime" >
+                <span class="zp-post-time" >Posted a day ago</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar container_commentfb">
+                <img src="_scs_theme_root_/assets/dist/images/comments.svg" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">18 comments</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar">
+                  <img src="_scs_theme_root_/assets/dist/images/facebook.png" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">21 shares</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+      </div>
+      -->
+      <!-- <hr style="background-color: #ebebeb; margin: 30px 0px; opacity: 0.5;" > -->
+
+      <!-- 
+      <div class="row" >
+        <div class="ui two column stackable grid" >
+          <div class="nine wide column" >
+            <img src="_scs_theme_root_/assets/dist/images/7sign_content.jpg" class="zp-img-content" >
+          </div>
+          <div class="seven wide column" >
+            <span class="zp-category-content" > HEALTH </span>
+            <br>
+            <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+              <span class="zp-title-content" >7 Signs That You May Be Suffering From Vitamin D Deficiency</span>
+            </a>
+            <div class="ui three column grid column-social-bar" >
+              <div class="column social-bar container_zpposttime" >
+                <span class="zp-post-time" >Posted a day ago</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar container_commentfb">
+                <img src="_scs_theme_root_/assets/dist/images/comments.svg" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">18 comments</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar">
+                  <img src="_scs_theme_root_/assets/dist/images/facebook.png" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">21 shares</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <!-- <hr style="background-color: #ebebeb; margin: 30px 0px; opacity: 0.5;" > -->
+
+      <!-- 
+      <div class="row" >
+        <div class="ui two column stackable grid" >
+          <div class="nine wide column" >
+            <img src="_scs_theme_root_/assets/dist/images/happy_content.jpg" class="zp-img-content" >
+          </div>
+          <div class="seven wide column" >
+            <span class="zp-category-content" > LIFE </span>
+            <br>
+            <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+            <span class="zp-title-content" >7 Signs That You May Be Suffering From Vitamin D Deficiency</span>
+            </a>
+            <div class="ui three column grid column-social-bar" >
+              <div class="column social-bar container_zpposttime" >
+                <span class="zp-post-time" >Posted a day ago</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar container_commentfb">
+                <img src="_scs_theme_root_/assets/dist/images/comments.svg" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">18 comments</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar">
+                  <img src="_scs_theme_root_/assets/dist/images/facebook.png" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">21 shares</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <!-- <hr style="background-color: #ebebeb; margin: 30px 0px; opacity: 0.5;" > -->
+
+      <!-- 
+      <div class="row" >
+        <div class="ui two column stackable grid" >
+          <div class="nine wide column" >
+            <img src="_scs_theme_root_/assets/dist/images/migraines_content.jpg" class="zp-img-content" >
+          </div>
+          <div class="seven wide column" >
+            <span class="zp-category-content" > HEALTH </span>
+            <br>
+            <a href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/content-health-post.html" >
+              <span class="zp-title-content" >We Might Finally Know Why Women Get More Migraines Than Men</span>
+            </a>
+            <div class="ui three column grid column-social-bar" >
+              <div class="column social-bar container_zpposttime" >
+                <span class="zp-post-time" >Posted a day ago</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar container_commentfb">
+                <img src="_scs_theme_root_/assets/dist/images/comments.svg" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">18 comments</span>
+              </div>
+              <div class="separator_menu" ></div>
+              <div class="column social-bar">
+                  <img src="_scs_theme_root_/assets/dist/images/facebook.png" class="zp-icon-social" >
+                <span class="zp-post-facebook-comment">21 shares</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+    <div class="ui four wide column" id="ads-content" >
+      <div class="row" >
+        <div class="column" style="background-color: #005d62;border-radius: 3px;" >
+          <div class="row">
+            <div class="column" style="text-align:center;" >
+              <img src="_scs_theme_root_/assets/dist/images/profile_picture.jpg" class="zp-profile-picture" >
+            </div>
+            <div class="column" style="text-align: center;" >
+              <span class="zp-profile-point" >1215</span>
+            </div>
+            <div class="column" style="text-align: center;" >
+              <span class="zp-lable-profile-expiring" >Life Plus Points expiring on</span>
+            </div>
+            <div class="column" style="text-align: center;" >
+              <span class="zp-date-expiring" >24 MAY 2018.</span>
+            </div>
+            <div class="ui three column grid activity-user" style="padding: 0px 20px;" >
+              <div class="column">
+                <span class="zp-point-activity" >354</span><br>
+                <span class="zp-lable-activity" >ACTIVITY</span>
+              </div>
+              <div class="separator_menu" style="opacity: 0.2;
+margin: 20px 0px;height: 60px;" ></div>
+              <div class="column" style="width: 32%;" >
+                <span class="zp-point-activity" >281</span><br>
+                <span class="zp-lable-activity" >POST</span>
+              </div>
+              <div class="separator_menu" style="opacity: 0.2;
+              margin: 20px 0px;height: 60px;" ></div>
+              <div class="column">
+                <span class="zp-point-activity" >432</span><br>
+                <span class="zp-lable-activity" >SHARE</span>
+              </div>
+            </div>
+            <div class="column" style="text-align: center;padding: 15px;" >
+                <button class="ui button zp-button-redeem" >REDEEM LIFE PLUS POINTS</button>
+            </div>
+            <hr style="opacity: 0.2;" >
+            <div class="column" style="text-align: center;padding: 20px;" >
+                <span class="zp-lable-lifeplus-challenge" >YOUR LIFE PLUS HEALTH CHALLENGES</span>
+            </div>
+          </div>
+        </div>
+        <div class="column" style="background-color: #f9f9f9;text-align: center;border: solid 1px #ebebeb;padding: 0px 30px 10px;
+        border-top: 0px;padding-bottom: 30px;" >
+          <div class="arrow-down" ></div>
+          <div class="zp-ads-subtitle" >30-Day Quit Smoking Challenge</div>
+          <img class="zp-ads-image" src="_scs_theme_root_/assets/dist/images/30_stop_smoking.jpg" >
+          <div class="zp-ads-title" >Feel refresh!</div>
+          <div class="zp-ads-content" >You’re free from anxiety and your body is changing into a non-smoker. <a href="#" class="read-more" >More</a><br>
+            <img src="_scs_theme_root_/assets/dist/images/facebook.png" class="zp-icon-social" >
+            <span class="zp-post-facebook-comment">Share this on Facebook</span>
+          </div>
+          <hr style="background-color: #ebebeb;opacity: 0.4;margin: 30px 0px" >
+          <div class="zp-ads-subtitle" >Daily 10k Steps Challenge</div>
+          <img class="zp-ads-image" src="_scs_theme_root_/assets/dist/images/10k_banner_img.jpg" >
+          <div class="zp-ads-title" >Just 3k away!</div>
+          <div class="zp-ads-content" >You are just 3000 steps away to hit the national average. <a href="#" class="read-more" >More</a><br>
+            <img src="_scs_theme_root_/assets/dist/images/facebook.png" class="zp-icon-social" >
+            <span class="zp-post-facebook-comment">Share this on Facebook</span>
+          </div>
+        </div>
+        <div class="column" style="background-color: #005d62; text-align: center;padding: 15px;" >
+          <button class="ui button zp-button-redeem" >JOIN A CHALLENGE TODAY</button>
+        </div>
+        <div class="column" style="text-align: center;" >
+          <img class="zp-ads-single-image" src="_scs_theme_root_/assets/dist/images/gsk_banner.jpg" >
+        </div>
+        <div class="zp-pop-quiz-banner">
+          <div class="zp-subtitle-pop-quiz-banner" >LIFE PLUS POP QUIZ</div>
+          <div class="zp-title-pop-quiz-banner" >The Secrets of Cellulite</div>
+          <div class="zp-content-pop-quiz-banner" >What causes cellulite? Can you get rid of it?<a>Take the quiz</a></div>
+          <hr class="zp-border-pop-quiz-banner" >
+          <img src="_scs_theme_root_/assets/dist/images/profile_picture.jpg" class="zp-people-pop-quiz-banner" >
+          <div class="zp-friends-pop-quiz-banner" >25 friends took the quiz</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui inverted vertical footer segment" style="background-color: #005d62;margin-top: 20px;" >
+    <div class="ui container">
+      <div class="ui stackable inverted equal height stackable grid">
+        <div class="six wide column" id="column_logo_company_bottom" >
+          <img class="logo-company-bottom" src="_scs_theme_root_/assets/dist/images/zuellig.svg" >
+        </div>
+        <div class="ten wide column">
+          <p class="zp-footer-lable" >© 2018 Zuellig Pharma Holdings Pte. Ltd. All rights reserved. | Legal Disclaimer | Privacy Policy.</p>
         </div>
       </div>
     </div>

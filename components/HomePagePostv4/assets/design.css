@@ -1,0 +1,136 @@
+.zp-img-content{
+	max-width: 360px;
+	object-fit: cover;
+    width: 100vw;
+    height: 200px;
+}
+
+.zp-title-content{
+	font-family: GothamRoundedLight;
+	font-size: 28px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.14;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+.zp-category-content{
+	font-family: GothamRoundedBold;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: -0.6px;
+	color: #005d62;
+	text-transform: uppercase;
+}
+
+.social-bar{
+	padding-top: 0px;
+}
+
+.column-social-bar{
+	width: 100%; 
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
+}
+
+.container_zpposttime{
+	padding-left: 0px!important;
+	padding-right: 5px!important;
+	width: 27%!important;
+}
+
+.container_commentfb{
+	padding-left: 0px!important;
+	padding-right: 5px!important;
+	width: 25%!important;
+}
+
+.zp-post-time{
+	font-family: GothamRoundedBook;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 0.5px;
+	color: #818282;
+}
+
+.zp-post-facebook-comment{
+	font-family: GothamRoundedLight;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 0.5px;
+	color: #005d62;
+}
+
+.container_zpposttime{
+	padding-left: 0px!important;
+	padding-right: 5px!important;
+	width: 27%!important;
+}
+
+.separator_menu{
+	border-right: 1px solid #ebebeb!important;
+	padding: 0px!important;
+	margin: 15px 10px;
+}
+
+.comments-image{
+	background: url("comments.svg");
+    width: 15px;
+    background-size: 15px 20px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.facebook-image{
+	background: url("facebook.png");
+	width: 15px;
+    background-size: 15px 15px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+
+@media only screen and (max-width: 375px){
+	.column-social-bar{
+        position: inherit;
+        margin-top: 0px!important;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 768px) {
+
+	.zp-img-content{
+		max-width: 310px;
+	}
+
+	.zp-title-content{
+        font-size: 18px;
+	}
+	
+	.social-bar{
+        padding: 10px 5px;
+	}
+	
+	.zp-post-time{
+        font-size: 8px;
+	}
+	
+	.zp-post-facebook-comment{
+        font-size: 8px;
+    }
+
+}

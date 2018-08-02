@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>LifePlus</title>
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/components/transition.css">
+
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/library/glide.core.min.css">
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/library/glide.theme.min.css">
+
+  <link rel="stylesheet" type="text/css" href="_scs_theme_root_/assets/dist/library/fa/css/fontawesome-all.min.css">
+
+  <style type="text/css">
+    
+    @font-face {
+      font-family: GothamRoundedLight;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Light.otf");
+    }
+
+    @font-face {
+      font-family: GothamRoundedBold;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Bold.otf");
+    }
+    
+    @font-face {
+      font-family: GothamRoundedMedium;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Medium.otf");
+    }
+    
+    @font-face {
+      font-family: GothamRoundedBook;
+      src: url("_scs_theme_root_/assets/fonts/gotham-rounded/GothamRounded-Book.otf");
+    }
+
+    .item{
+      font-family: GothamRoundedMedium;
+      font-size: 13px;
+      font-weight: 600!important;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: 1.1px;
+      text-align: center;
+      color: #003948!important;
+    }
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: auto;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 1em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    #logo_center img{
+      margin: 80px auto 15px;
+      width:18%
+    }
+
+    #logo_center .scs-text{
+      font-size: 15px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .middle-zp-menu{
+      opacity: 0.5;
+      font-family: GothamRoundedLight;
+      font-size: 12px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #ffffff;
+      width: 8% !important;
+    }
+
+    .middle-zp-menu.active{
+      opacity: 1;
+      font-family: GothamRoundedLight;
+      font-size: 12px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    .zp-profile-point{
+      font-family: GothamRoundedBold;
+      font-size: 30px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: 1px;
+      color: #c3d500;
+    }
+
+    .zp-lable-profile-expiring{
+      font-family: GothamRoundedLight;
+      font-size: 11px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .zp-date-expiring{
+      font-family: GothamRoundedBold;
+      font-size: 13px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.54;
+      letter-spacing: 0.3px;
+      text-align: center;
+      color: #ffffff;
+
+    }
+
+    .zp-point-activity{
+      font-family: GothamRoundedBold;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #c3d500;
+    }
+
+    .zp-lable-activity{
+      font-family: GothamRoundedBold;
+      font-size: 9px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.22;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .zp-lable-lifeplus-challenge{
+      font-family: GothamRoundedBold;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      text-align: center;
+      color: #c3d500;
+    }
+
+    .zp-footer-lable{
+      font-family: GothamRoundedLight;
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.9px;
+      text-align: right;
+      color: #ffffff;
+    }
+    
+    .arrow-down {
+      width: 0; 
+      height: 0; 
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #005d62;
+      margin: 0px auto;
+    }
+
+    .zp-ads-subtitle{
+      font-family: GothamRoundedLight;
+      font-size: 24px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      letter-spacing: -0.9px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .zp-ads-title{
+      font-family: GothamRoundedBold;
+      font-size: 21px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: #005d62;
+    }
+
+    .zp-ads-content{
+      font-family: GothamRoundedBook;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+    }
+
+    .zp-ads-image{
+      max-width: 220px;
+    }
+
+    .zp-post-time{
+      font-family: GothamRoundedBook;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      color: #818282;
+    }
+
+    .zp-post-facebook-comment{
+      font-family: GothamRoundedLight;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      color: #005d62;
+    }
+
+    .glide__bullet{
+      width: 25px;
+      height: 5px;
+      border-radius: 200px;
+      background-color: #003948;
+    }
+    
+    .glide__bullet:hover, .glide__bullet:focus{
+      border: 2px solid rgb(114, 151, 72);;
+      background-color: rgb(114, 151, 72);
+    }
+
+    .glide__bullet--active {
+      background-color: rgb(114, 151, 72);
+    }
+
+    .image-top-menu {
+      width: 100px;
+    }
+
+    .text-top-section{
+      text-align: left;
+      padding: 25px 0px!important;
+    }
+
+    .text-top-section h3 {
+      margin-bottom: 0px;
+      font-family: GothamRoundedLight;
+      font-size: 11px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.82;
+      letter-spacing: 0.7px;
+      color: #003948;
+    }
+
+    .text-top-section p{
+      font-family: GothamRoundedLight;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.3px;
+      color: #000000;
+      max-width: 210px;
+    }
+
+    .text-glide{
+      text-align: left;
+      padding-top: 50px!important;
+    }
+
+    #post-top{
+      padding: 15px 0px;
+    }
+
+    #post-top .scs-row{
+      padding: 0px;
+    }
+
+    .zp-img-content{
+      max-width: 420px;
+    }
+
+    .zp-title-content{
+      font-family: GothamRoundedLight;
+      font-size: 28px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    .zp-category-content{
+      font-family: GothamRoundedLight;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: -0.6px;
+      color: #005d62;
+    }
+
+    .zp-icon-social{
+      width: 15px;
+    }
+
+    .glide-picture{
+      max-width: 600px;
+    }
+
+    .zp-profile-picture{
+      border-radius: 120px;
+      width: 100px;
+      margin: 20px;
+    }
+
+    .zp-pop-quiz-banner{
+      background-color: #005d62;
+      background-image: url(_scs_theme_root_/assets/dist/images/lamp_background_banner.png);
+      background-position: right center;
+      background-size: 60px 165px;
+      background-repeat: no-repeat;
+      padding: 30px 20px 35px;
+      min-height: 250px;
+
+    }
+    
+    .zp-subtitle-pop-quiz-banner{
+      font-family: GothamRoundedBold;
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      color: #c3d500;
+      padding: 10px 0px;
+    }
+
+    .zp-title-pop-quiz-banner{
+      font-family: GothamRoundedLight;
+      font-size: 28px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.8px;
+      color: #ffffff;
+      padding: 10px 0px;
+    }
+
+    .zp-content-pop-quiz-banner{
+      font-family: GothamRoundedLight;
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+      padding: 10px 0px;
+    }
+
+    .zp-content-pop-quiz-banner a {
+      font-family: GothamRoundedBook;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: right;
+      color: #c3d500;
+      padding: 10px 0px;
+    }
+
+    .zp-border-pop-quiz-banner{
+      opacity: 0.2;
+      background-color: #ebebeb;
+    }
+
+    .zp-people-pop-quiz-banner{
+      width: 30px;
+      border-radius: 130px;
+      float: left;
+    }
+
+    .zp-friends-pop-quiz-banner{
+      font-family: GothamRoundedMedium;
+      font-size: 10px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.8;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+      float: left;
+      padding-top: 5px;
+    }
+
+    .activity-user{
+      text-align: center;
+    }
+
+    .zp-button-redeem{
+      color:#ffffff!important; 
+      background-color: #729748!important;
+    }
+
+    .logo-company{
+      width: 10%;
+      height: 10%;
+      margin-top: 10px;
+    }
+
+    .container-glide{
+      height: 400px;
+    }
+
+    .zp-glide-category{
+      font-family: GothamRoundedBold;
+      text-align: left;
+      font-size: 12px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: -0.6px;
+      color: #005d62;
+    }
+
+    .zp-glide-title{
+      font-family: GothamRoundedLight;
+      text-align: left;
+      font-size: 33px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      color: #000000;
+    }
+
+    .zp-glide-summary{
+      font-family: GothamRoundedLight;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: 0.3px;
+      color: #000000;
+    }
+
+    .column-social-bar{
+      width: 100%; 
+      position: absolute;
+      bottom: 15px;
+    }
+
+    .logo-company-bottom{
+      width: 90px;
+    }
+
+    .zp-ads-single-image{
+      max-width: 220px;
+    }
+
+    .zp-detail-post-title{
+      position: absolute;
+      top: 160px;
+      left: 0;
+      right: 0;
+      font-family: GothamRoundedLight;
+      font-size: 44px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      max-width: 730px;
+      margin: 0px auto;
+    }
+
+    .zp-detail-post-column{
+      max-width: calc( 1127px - 10rem ) !important;
+      margin: -100px auto!important;
+      padding: 0px 20px!important;
+    }
+
+    .zp-detail-post-column .column-content{
+      background: rgba(255, 255, 255, 1);
+      padding: 30px 40px!important;
+    }
+    
+    .zp-detail-post-column .column-ads{
+      background: rgba(255, 255, 255, 1);
+      padding: 35px!important;
+    }
+
+    .zp-detail-post-summary{
+      font-family: GothamRoundedMedium;
+      font-size: 24px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: 0.5px;
+      color: #000000;
+
+    }
+
+    .zp-detail-post-content p{
+      font-family: GothamRoundedLight;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: 0.3px;
+      color: #000000;
+    }
+
+    .zp-detail-post-image{
+      max-width: 300px;
+    }
+
+    .logo-zp-suggest-post{
+      width: 50px!important;
+      border-radius: 30px;
+      border: solid 1px #ebebeb;
+      margin: 0px auto;
+      background: #ffffff;
+      height: 50px;
+      padding: 7px!important;
+    }
+
+    .row-suggest-post{
+      padding: 10px 180px!important;
+    }
+
+    .column-suggest-post{
+      width: 32%!important;
+    }
+
+    .summary-suggest-post{
+      max-width: 330px;
+    }
+
+    .image-suggest-post{
+      max-width: 330px;
+    }
+
+    .zp-recommended-title{
+      font-family: GothamRoundedLight;
+      font-size: 24px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      letter-spacing: -0.9px;
+      text-align: center;
+      color: #000000;
+      margin: 0px auto;
+    }
+
+    .zp-recommended-image{
+      max-height: 150px;
+      margin: 0px auto;
+    }
+
+    .zp-recommended-subtitle{
+      font-family: GothamRoundedBold;
+      font-size: 21px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: #005d62;
+      margin: 0px auto;
+    }
+
+    .zp-recommended-summary{
+      font-family: GothamRoundedBook;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+      margin: 0px auto;
+      padding: 0px 30px;
+    }
+    
+    .zp-recommended-summary a{
+      font-family: GothamRoundedBook;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      color: #005d62;
+    }
+
+    .zp-recommended-sharefb{
+      font-family: GothamRoundedBook;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+      color: #005d62;
+      margin: 0px auto;
+    }
+
+    .bmi-shoes-image{
+      width: 300px;
+    }
+
+    .bmi-indicator-image{
+      width: 300px;
+    }
+
+    .item-right-profile{
+      padding: 0px 5px;
+    }
+
+    .notification-buble{
+      background-color: #d0021b;
+      border: solid 2px #ffffff;
+      border-radius: 30px;
+      width: 15px;
+      position: absolute;
+      color: #ffffff;
+      font-size: 7px;
+      padding: 2px;
+      top: 10px;
+      right: 49px;
+      padding-right: 1px;
+      
+    } 
+    
+    .range-slider {
+      margin: 60px 0 0 0%;
+    }
+
+    .range-slider {
+      width: 100%;
+    }
+
+    .range-slider__range {
+      -webkit-appearance: none;
+      width: calc(100% - (73px));
+      height: 10px;
+      border-radius: 5px;
+      background: #d7dcdf;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
+    .range-slider__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+              appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #005d62;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+    }
+    .range-slider__range::-webkit-slider-thumb:hover {
+      background: #005d62;
+    }
+    .range-slider__range:active::-webkit-slider-thumb {
+      background: #005d62;
+    }
+    .range-slider__range::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border: 0;
+      border-radius: 50%;
+      background: #2c3e50;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+    }
+    .range-slider__range::-moz-range-thumb:hover {
+      background: #005d62;
+    }
+    .range-slider__range:active::-moz-range-thumb {
+      background: #005d62;
+    }
+    .range-slider__range:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 3px #c3d500, 0 0 0 6px #c3d500;
+    }
+
+    ::-moz-range-track {
+      background: #d7dcdf;
+      border: 0;
+    }
+
+    .area-input-assessment{
+      margin: 30px;
+      font-family: GothamRoundedLight;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+    }
+
+    .input-assessment{
+      max-width: 80px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 4px;
+      border: solid 1px #ebebeb;
+    }
+
+    @media only screen and (max-width: 375px){
+
+      #header-image{
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin: 35px auto 0px;
+      }
+
+      .zp-menu{
+        position: absolute;
+        top: 0px;
+      }
+
+      .zp-menu .toc{
+        position: absolute!important;
+        right: 0px;
+        top: 5px;
+      }
+
+      .zp-menu .sidebar{
+        width: 20px!important;
+      }
+
+      .zp-menu > .logo-company{
+        width: 18%;
+      }
+
+      #logo_center img {
+        margin: 35px auto 0px;
+      }
+      
+      #logo_center .scs-title{
+        margin-top: 0px;
+      }
+
+      #logo_center .scs-text{
+        font-size: 8px;
+      }
+
+      .container-glide{
+        height: 480px;
+      }
+
+      .glide-picture{
+        max-width: 320px;
+      }
+
+      .zp-glide-title{
+        font-size: 20px;
+      }
+
+      .zp-glide-summary{
+        font-size: 10px;
+      }
+
+      .image-glide{
+        padding-left: 0px;
+        padding-right: 5px;
+      }
+
+      .social-glide{
+        position: absolute!important;
+        top: 400px;
+        width: 100%;
+      }
+      
+      .middle-zp-menu{
+        min-width: 24% !important;
+        padding: 1rem 10px!important;
+        font-size: 10px!important;
+      }
+
+      #ads-content{
+        padding: 0px 0px!important;
+      }
+
+      .zp-ads-content{
+        padding: 10px;
+      }
+
+      .column-social-bar{
+        position: inherit;
+        margin-top: 0px!important;
+      }
+
+      .social-bar{
+        padding-top: 0px;
+      }
+
+      #column_logo_company_bottom{
+        text-align: center;
+      }
+
+      .logo-company-bottom{
+        width: 150px;
+      }
+
+      .zp-button-redeem{
+        font-size: 1rem;
+      }
+
+      .zp-ads-single-image{
+        max-width: 300px!important;
+      }
+
+      .ui.stackable.grid > .row > .wide.column.logo-zp-suggest-post{
+        width: 50px!important;
+        height: 50px!important;
+        padding: 7px!important;
+        margin: 0px auto!important;
+      }
+
+      .row-suggest-post{
+        padding: 10px 10px!important;
+      }
+
+      .column-suggest-post{
+        width: 100%!important;
+        text-align: center;
+      }
+
+      .summary-suggest-post{
+        max-width: 100%;
+      }
+
+      .image-suggest-post{
+        max-width: 230px!important;
+      }
+
+      .bmi-indicator-image{
+        width: 270px;
+      }
+
+      .bmi-shoes-image{
+        width: 270px;
+      }
+
+      .ui.menu:not(.vertical) .right.item{
+        margin-right: 40px!important;
+        padding-top: 5px!important;
+      }
+
+      .notification-buble{
+        top: 5px;
+      }
+
+      .ui.secondary.pointing.menu .item {
+        font-size: 11px;
+      }
+
+    }
+
+    @media only screen and (max-width: 800px){
+      .image-top-menu{
+        width: 80px;
+      }
+
+      .text-top-section{
+        padding: 10px 5px!important;
+      }
+
+      .middle-zp-menu{
+        width: 13% !important;
+      }
+
+      .zp-img-content{
+        max-width: 310px;
+      }
+
+      .zp-title-content{
+        font-size: 18px;
+      }
+
+      .social-bar{
+        padding: 10px 5px;
+      }
+
+      .zp-post-time{
+        font-size: 8px;
+      }
+
+      .zp-post-facebook-comment{
+        font-size: 8px;
+      }
+      
+      .zp-icon-social{
+        width: 10px;
+      }
+
+      .glide-picture{
+        max-width: 400px;
+      }
+
+      .activity-user{
+        margin: 0px!important;
+      }
+
+      .zp-button-redeem{
+        font-size: 10px!important;
+      }
+
+      .zp-lable-lifeplus-challenge{
+        font-size: 11px;
+      }
+
+      .zp-ads-subtitle{
+        font-size: 18px;
+      }
+
+      .zp-ads-image{
+        max-width: 140px;
+      }
+
+      .zp-subtitle-pop-quiz-banner{
+        font-size: 12px;
+      }
+
+      .zp-title-pop-quiz-banner{
+        font-size: 22px;
+      }
+
+      .zp-content-pop-quiz-banner{
+        font-size: 11px;
+      }
+      
+      .zp-content-pop-quiz-banner a{
+        font-size: 11px;
+      }
+
+      .zp-friends-pop-quiz-banner{
+        padding-top: 8px;
+        font-size: 7px;
+      }
+
+      .zp-ads-single-image{
+        max-width: 140px;
+      }
+
+      .column-suggest-post{
+        width: 100%!important;
+        text-align: center;
+      }
+
+      .summary-suggest-post{
+        max-width: 100%;
+      }
+
+      .bmi-indicator-image{
+        width: 230px;
+      }
+
+      .ui.secondary.pointing.menu .item{
+        padding: 15px 10px!important;
+        font-size: 10px;
+      }
+
+    }
+
+    @media only screen and (max-width: 980px) and (min-width: 768px) {
+
+      .ui.secondary.pointing.menu .item{
+        padding: 15px 10px!important;
+      }
+      
+      .ui.menu:not(.vertical) .right.item{
+        padding: 8px!important;
+      }
+
+      .row-suggest-post{
+        padding: 10px 120px!important;
+      }
+
+      .image-suggest-post{
+        max-width: 230px!important;
+      }
+    }
+
+    @media only screen and (max-width: 1280px){
+      .image-suggest-post{
+        max-width: 280px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <!--$SCS_RENDER_INFO-->
+  <!--$SCS_SITE_HEADER-->
+  <!--$SCS_PAGE_HEADER-->
+
+  <script src="_scs_theme_root_/assets/dist/library/jquery.min.js"></script>
+  <script src="_scs_theme_root_/assets/dist/library/glide.min.js"></script>
+  <script src="_scs_theme_root_/assets/dist/components/visibility.js"></script>
+  <script src="_scs_theme_root_/assets/dist/components/sidebar.js"></script>
+  <script src="_scs_theme_root_/assets/dist/components/transition.js"></script>
+
+  <script type="text/javascript" src="_scs_theme_root_/assets/js/includeHTML.js"></script>
+  <script data-main="/_sitescloud/renderer/renderer.js" src="/_sitescloud/renderer/require.js"></script>
+
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+      new Glide('.glide').mount()
+
+    })
+  ;
+  </script>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <!-- <a class="active item">Home</a> -->
+    <a class="item">WOW!</a>
+    <a class="item">LIFE</a>
+    <a class="item">HEALTH</a>
+    <a class="item">EUREKA</a>
+    <a class="item">VIDEOS</a>
+    <a class="item">DISCOVERY</a>
+    <a class="item" href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/assessment-page.html" >ASSESSMENT</a>
+    <!-- <div class="right menu">
+      <div class="item">
+        <a class="ui button">Log in</a>
+      </div>
+      <div class="item">
+        <a class="ui primary button">Sign Up</a>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical sidebar menu right">
+  <!-- <a class="active item">Home</a> -->
+  <a class="item">WOW!</a>
+  <a class="item">LIFE</a>
+  <a class="item">HEALTH</a>
+  <a class="item">EUREKA</a>
+  <a class="item">VIDEOS</a>
+  <a class="item">DISCOVERY</a>
+  <a class="item" href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/assessment-page.html" >ASSESSMENT</a>
+  <!-- <a class="item">Login</a>
+  <a class="item">Signup</a> -->
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui vertical masthead center aligned segment" style="padding-top: 0px;border:0px;" >
+    <div class="ui container">
+      <div class="ui large secondary pointing menu zp-menu" style="border-bottom: 0px;" >
+        <a class="toc item">
+          <img class="sidebar icon" src="_scs_theme_root_/assets/dist/images/icon-menu.png" />
+        </a>
+        <img src="_scs_theme_root_/assets/dist/images/life-plus-color@3x.png" class="logo-company" />
+        <a class="item">WOW!</a>
+        <a class="item">LIFE</a>
+        <a class="item">HEALTH</a>
+        <a class="item">EUREKA</a>
+        <a class="item">VIDEOS</a>
+        <a class="item">DISCOVERY</a>
+        <a class="item" href="https://zuelligpharmacecstest01-a427315.sites.us2.oraclecloud.com/lifeplusv4/assessment-page.html" >ASSESSMENT</a>
+        <div class="right item">
+          <div class="item-right-profile" >ENG<i class="fas fa-chevron-down"></i></div>
+          <div class="item-right-profile" ><i class="fas fa-search"></i></div>
+          <div class="item-right-profile" >
+            <i class="far fa-bell"></i>
+            <span class="notification-buble" >1</span>
+          </div>
+          <div class="item-right-profile" ><img src="_scs_theme_root_/assets/dist/images/profile_picture.jpg" class="zp-profile-picture" style="width:25px;margin: 0px;" ></div>
+        </div>
+      </div>
+    </div>
+    <div class="ui image container" style="width: 100%" id="header-image" >
+      <img src="_scs_theme_root_/assets/dist/images/image_big_assessment.jpg" />
+      <span class="zp-detail-post-title" >Know Your BMI</span>
+    </div>
+  </div>
+
+  <div class="ui stackable grid zp-detail-post-column" >
+    <div class="ui ten wide column column-content" >
+      <div class="row zp-detail-post-content" >
+          <b class="zp-detail-post-summary" >Are you in the healthy range? Use this tool to calc​ulate your Body Mass Index (BMI) and find out your health risk.</b>
+      </div>
+    </div>
+    <div class="ui six wide column column-ads" id="ads-content" >
+      <div class="row" >
+        <div class="column" style="background-color: #005d62;background-image: url(_scs_theme_root_/assets/dist/images/star_assessment.png);background-repeat: no-repeat; background-position: top center;background-size: 80px;" >
+          <div class="row">
+            <div class="column" style="text-align:center;padding: 100px 20px 20px 20px;" >
+              <p style="font-family: GothamRoundedBold;
+              font-size: 12px;
+              font-weight: bold;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.25;
+              letter-spacing: -0.7px;
+              text-align: center;
+              color: #c3d500;" >EARN LIFE PLUS POINTS</p>
+              <p style="font-family: GothamRoundedLight;
+              font-size: 10px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.45;
+              letter-spacing: 0.2px;
+              text-align: center;
+              opacity: 0.5;
+              color: #ffffff;" >Simply take this simple BMI assessment and share with your friend to receive 50 Life Plus Points.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="ui stackable grid zp-detail-post-column" style="margin: 100px auto!important;" >
+    <div class="ui sixty wide column" >
+      <div class="row" style="padding: 14px;" >
+        <div class="ui two column stackable grid" >
+          <div class="seven wide column" style="border-radius: 4px;border: solid 1px #ebebeb;" >
+            <div class="ui two column grid" >
+              <div class="column" style="text-align: center;background: #f9f9f9;padding: 40px;max-height: 220px;" >
+                <img src="_scs_theme_root_/assets/dist/images/weight_assessment.png" style="width: 180px;" >
+              </div>
+              <div class="column" style="text-align: center;" >
+                <p style="font-family: GothamRoundedBook;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: normal;
+                text-align: center;
+                color: #005d62;" >What is your weight?</p>
+                <div class="range-slider">
+                  <input class="range-slider__range" type="range" value="55" min="30" max="200">
+                </div>
+                <div class="area-input-assessment" >
+                  <input type="text" id="weight_kg" name="weight_kg" class="input-assessment" value="55" > kg
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seven wide column right floated" style="border-radius: 4px;border: solid 1px #ebebeb;" >
+            <div class="ui two column grid" >
+              <div class="column" style="text-align: center;background: #f9f9f9;padding: 40px;max-height: 220px;" >
+                <img src="_scs_theme_root_/assets/dist/images/height_assessment.png" style="width: 180px;" >                
+              </div>
+              <div class="column" style="text-align: center;" >
+                <p style="font-family: GothamRoundedBook;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: normal;
+                text-align: center;
+                color: #005d62;" >What is your height?</p>
+                <div class="range-slider">
+                  <input class="range-slider__range" type="range" value="160" min="100" max="300">
+                </div>
+                <div class="area-input-assessment" >
+                    <input type="text" id="height_cm" name="height_cm" class="input-assessment" value="160" > cm
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding: 15px 15px;border-radius: 4px;border: solid 1px #ebebeb;margin:30px 0px;" >
+        <div class="ui stackable two column grid" >
+          <div class="six wide column" style="padding: 0px;" >
+            <img src="_scs_theme_root_/assets/dist/images/shoes_assessment.jpg" class="bmi-shoes-image"  >
+          </div>
+          <div class="column right floated" >
+            <div class="ui grid" >
+              <div class="row" style="background:#ebebeb;" >
+                <div class="ui stackable two column grid" >
+                  <div class="five wide column" >
+                    <div style="font-family: GothamRoundedLight;
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 2;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #000000;" >Your BMI : </div>
+                    <div style="font-family: GothamRoundedBold;
+                    font-size: 44px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #f5a623;" >24.7</div>
+                  </div>
+                  <div class="column" >
+                    <img src="_scs_theme_root_/assets/dist/images/bmi_indicator.png" class="bmi-indicator-image" />
+                  </div>
+                </div>
+              </div>
+              <div class="row" >
+                <p style="font-family: GothamRoundedLight;
+                font-size: 24px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.17;
+                letter-spacing: normal;
+                color: #005d62;" >MODERATE RISK</p>
+              </div>
+              <div class="row" >
+                <p style="font-family: GothamRoundedLight;
+                font-size: 14px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: 0.3px;
+                color: #000000;
+              " >Aim to lose 5% to 10% of your body weight over 6 to 12 months by increasing physical activity and reducing caloric intake</p>
+              </div>
+              <div class="row" >
+                <button class="ui button" style="border-radius: 3px;background-color: #729748;font-family: GothamRounded;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.82;
+                letter-spacing: 0.9px;
+                color: #ffffff;"  >LEARN MORE</button>
+                <button class="ui button" style="border-radius: 3px;background-color: #729748;font-family: GothamRounded;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.82;
+                letter-spacing: 0.9px;
+                color: #ffffff;" >RE-CALCULATE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" >
+        <p style=" font-family: GothamRoundedBook;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;" >RECOMMENDED PROGRAMMES FOR YOU</p>
+        <div class="ui three column stackable grid" >
+          <div class="ui grid five wide column left aligned page" style="text-align: center;background:linear-gradient(180deg, #f9f9f9 30%, #ffffff 70%);border-radius: 4px;
+  border: solid 1px #ebebeb;max-height:450px;margin: 0px;" >
+            <div class="row" style="min-height: 70px;" >
+              <p class="zp-recommended-title" >Daily 10k Steps Challenge</p>
+            </div>
+            <div class="row">
+              <img class="zp-recommended-image" src="_scs_theme_root_/assets/dist/images/10k_banner_img.jpg" > 
+            </div>
+            <div class="row" ><p class="zp-recommended-subtitle" >Just 3k away!</p></div>
+            <div class="row" ><p class="zp-recommended-summary" >You are just 3000 steps away to hit the national average.<a href="">More</a></p></div>
+            <div class="row" ><p class="zp-recommended-sharefb" >Share this on Facebook</p></div>
+          </div>
+          <div class="ui grid five wide column center aligned page" style="text-align: center;background:linear-gradient(180deg, #f9f9f9 30%, #ffffff 70%);border-radius: 4px;
+  border: solid 1px #ebebeb;max-height:450px;margin: 0px 25px;" >
+            <div class="row" style="min-height: 70px;" >
+              <p class="zp-recommended-title" >1500 Calories Fitness Challenge</p>
+            </div>
+            <div class="row">
+                <img class="zp-recommended-image" src="_scs_theme_root_/assets/dist/images/salad_assessment.jpg" > 
+            </div>
+            <div class="row" ><p class="zp-recommended-subtitle" >You’re on top!</p></div>
+            <div class="row" ><p class="zp-recommended-summary" >Fusce mollis, nulla nec finibus bibendum, neque dolor.<a href="">More</a></p></div>
+            <div class="row" ><p class="zp-recommended-sharefb" >Share this on Facebook</p></div>
+          </div>
+          <div class="ui grid five wide column right aligned page" style="text-align: center;background:linear-gradient(180deg, #f9f9f9 30%, #ffffff 70%);border-radius: 4px;
+  border: solid 1px #ebebeb;max-height:450px;margin: 0px;" >
+            <div class="row" style="min-height: 70px;" >
+              <p class="zp-recommended-title" >Know Your Dessert</p>
+            </div>
+            <div class="row">
+                <img class="zp-recommended-image" src="_scs_theme_root_/assets/dist/images/dessert_assessment.jpg" > 
+            </div>
+            <div class="row" ><p class="zp-recommended-subtitle" >Did You Know?</p></div>
+            <div class="row" ><p class="zp-recommended-summary" >Fusce mollis, nulla nec finibus bibendum, neque dolor.<a href="">More</a></p></div>
+            <div class="row" ><p class="zp-recommended-sharefb" >Share this on Facebook</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui stackable grid" style="background:#ebebeb;" >
+
+      <div class="row" style="top: -40px;" >
+        <div class="sixty wide column logo-zp-suggest-post" >
+          <img src="_scs_theme_root_/assets/dist/images/lifeplus_logo_border.png" style="max-width: 36px;text-align: center;" >
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: -40px;margin-bottom: -40px;" >
+        <div class="sixty wide column" >
+            <p style="font-family: GothamRoundedLight;
+              font-size: 24px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.17;
+              letter-spacing: -0.9px;
+              text-align: center;
+              color: #000000;
+            " >Related articles for you:</p>
+        </div>
+      </div>
+
+      <div class="row row-suggest-post" >
+        <div class="ui stackable three column grid" >
+            <div class="column column-suggest-post">
+              <div class="">
+                <img src="_scs_theme_root_/assets/dist/images/bitmap_health_bed.jpg" class="image-suggest-post" >
+              </div>
+              <div>
+                <p style="font-family: GothamRoundedBold;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.82;
+                letter-spacing: 0.7px;
+                color: #003948;
+              " >HEALTH</p>
+              </div>
+              <div class="summary-suggest-post" >
+                <p style="font-family: GothamRoundedBook;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: normal;
+                color: #000000;" >Why Sleep Is the No. 1 Most Important Thing for a Better Body</p>
+              </div>
+            </div>
+            <div class="column column-suggest-post">
+              <div class="">
+                <img src="_scs_theme_root_/assets/dist/images/bitmap_health_salad.jpg" class="image-suggest-post" >
+              </div>
+              <div>
+                <p style="font-family: GothamRoundedBold;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.82;
+                letter-spacing: 0.7px;
+                color: #003948;
+              " >HEALTH</p>
+              </div>
+              <div class="summary-suggest-post" >
+                <p style="font-family: GothamRoundedBook;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: normal;
+                color: #000000;" >10 Easy Everyday Instant Pot Meals Starting at 100 Calories</p>
+              </div>
+            </div>
+            <div class="column column-suggest-post">
+              <div class="">
+                <img src="_scs_theme_root_/assets/dist/images/bitmap_health_walking.jpg" class="image-suggest-post" >
+              </div>
+              <div >
+                <p style="font-family: GothamRoundedBold;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.82;
+                letter-spacing: 0.7px;
+                color: #003948;
+              " >HEALTH</p>
+              </div>
+              <div class="summary-suggest-post" >
+                <p style="font-family: GothamRoundedBook;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: normal;
+                color: #000000;" >7 Walking Tips to Lose Weight Faster</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="ui inverted vertical footer segment" style="background-color: #005d62;margin-top: 10px;" >
+    <div class="ui container">
+      <div class="ui stackable inverted equal height stackable grid">
+        <div class="six wide column" id="column_logo_company_bottom" >
+          <img class="logo-company-bottom" src="_scs_theme_root_/assets/dist/images/zuellig.svg" >
+        </div>
+        <div class="ten wide column">
+          <p class="zp-footer-lable" >© 2018 Zuellig Pharma Holdings Pte. Ltd. All rights reserved. | Legal Disclaimer | Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
